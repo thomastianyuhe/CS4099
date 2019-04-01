@@ -1,0 +1,19 @@
+INFO:root:Best: 0.734884 using {'activation': 'softmax', 'batch_size': 8, 'dropout': 0.3, 'epochs': 20}
+INFO:root:0.734884 (0.058555) with: {'activation': 'softmax', 'batch_size': 8, 'dropout': 0.3, 'epochs': 20}
+INFO:root:0.567442 (0.077386) with: {'activation': 'softplus', 'batch_size': 8, 'dropout': 0.3, 'epochs': 20}
+INFO:root:0.269767 (0.101854) with: {'activation': 'softsign', 'batch_size': 8, 'dropout': 0.3, 'epochs': 20}
+INFO:root:0.381395 (0.053715) with: {'activation': 'relu', 'batch_size': 8, 'dropout': 0.3, 'epochs': 20}
+INFO:root:0.283721 (0.135027) with: {'activation': 'tanh', 'batch_size': 8, 'dropout': 0.3, 'epochs': 20}
+INFO:root:0.632558 (0.038075) with: {'activation': 'sigmoid', 'batch_size': 8, 'dropout': 0.3, 'epochs': 20}
+INFO:root:0.604651 (0.030360) with: {'activation': 'hard_sigmoid', 'batch_size': 8, 'dropout': 0.3, 'epochs': 20}
+INFO:root:0.400000 (0.037592) with: {'activation': 'linear', 'batch_size': 8, 'dropout': 0.3, 'epochs': 20}
+INFO:root:              precision    recall  f1-score   support
+
+   classical       0.31      1.00      0.47        33
+     country       0.00      0.00      0.00        33
+       world       0.00      0.00      0.00        41
+
+   micro avg       0.31      0.31      0.31       107
+   macro avg       0.10      0.33      0.16       107
+weighted avg       0.10      0.31      0.15       107
+

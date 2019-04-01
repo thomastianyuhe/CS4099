@@ -1,0 +1,22 @@
+INFO:root:batch_size:  8
+INFO:root:n_epochs:  30
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.10
+INFO:root:batch_size:  8
+INFO:root:n_epochs:  30
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.10
+INFO:root:batch_size:  8
+INFO:root:n_epochs:  30
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.10
+INFO:root:batch_size:  8
+INFO:root:n_epochs:  30
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.10
+INFO:root:Test accuracy:  0.7636
+INFO:root:batch_size:  8
+INFO:root:n_epochs:  30
+INFO:root:learning_rate:  0.0001
+INFO:root:dropout:  0.20
+INFO:root:Test accuracy:  0.7697

@@ -1,0 +1,5 @@
+INFO:root:batch_size:  32
+INFO:root:n_epochs:  35
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.10
+INFO:root:Test accuracy:  0.7758

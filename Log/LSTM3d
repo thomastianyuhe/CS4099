@@ -1,0 +1,28 @@
+INFO:root:batch_size:  16
+INFO:root:n_epochs:  30
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.50
+INFO:root:recurrent_dropout:  0.03
+INFO:root:Test loss:  0.8404
+INFO:root:Test accuracy:  0.6667
+INFO:root:batch_size:  16
+INFO:root:n_epochs:  40
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.50
+INFO:root:recurrent_dropout:  0.03
+INFO:root:Test loss:  0.7814
+INFO:root:Test accuracy:  0.6869
+INFO:root:batch_size:  16
+INFO:root:n_epochs:  40
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.10
+INFO:root:recurrent_dropout:  0.03
+INFO:root:Test loss:  0.6324
+INFO:root:Test accuracy:  0.8182
+INFO:root:batch_size:  8
+INFO:root:n_epochs:  40
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.10
+INFO:root:recurrent_dropout:  0.03
+INFO:root:Test loss:  0.4978
+INFO:root:Test accuracy:  0.7980
