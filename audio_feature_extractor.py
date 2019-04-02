@@ -7,7 +7,7 @@ import os
 import sys
 
 def path_to_audiofiles(dataset):
-    path = "./%s" % dataset
+    path = "./Audios/%s" % dataset
     list_of_audiofiles = []
     for file in os.listdir(path):
         if file.endswith(".au") or file.endswith(".wav"):
@@ -19,17 +19,17 @@ def extract_audio_features(list_of_audiofiles, dataset, n_frame=128, n_mfcc=14, 
     X_data = './MFCC_dataset/%s_x_data' % dataset
     y_data = './MFCC_dataset/%s_y_data' % dataset
     #calculate the total number of features
-    n_feature = n_mfcc + int(extra)*2
+    n_feature = n_mfcc
+    if extra:
+        n_feature += 12
     data = np.zeros((len(list_of_audiofiles), n_frame, n_feature), dtype=np.float64)
     target = []
     for i, filepath in enumerate(list_of_audiofiles):
         y, sr = librosa.load(filepath)
         mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=n_mfcc)
         data[i,:n_frame,:n_mfcc] = mfcc.T[:n_frame, :]
-        spectral_centroid = librosa.feature.spectral_centroid(y=y, sr=sr)
-        data[i,:n_frame,n_mfcc:n_mfcc+1] = spectral_centroid.T[:n_frame,:]
         chroma = librosa.feature.chroma_stft(y=y, sr=sr)
-        data[i,:n_frame,n_mfcc+1:] = chroma.T[:n_frame,:]
+        data[i,:n_frame,n_mfcc:] = chroma.T[:n_frame,:]
         filename = re.split('[/]', filepath)[-1]
         genre = re.split('[ .]', filename)[0]
         print("filename %s, genre %s" % (filename, genre))
@@ -51,8 +51,8 @@ def extract_audio_features(list_of_audiofiles, dataset, n_frame=128, n_mfcc=14, 
 
 if __name__ == '__main__':
     dataset = sys.argv[1]
-    n_frame = sys.argv[2]
-    n_mfcc = sys.argv[3]
+    n_frame = int(sys.argv[2])
+    n_mfcc = int(sys.argv[3])
     extra = (sys.argv[4] == 'True')
     p = path_to_audiofiles(dataset)
     extract_audio_features(p, dataset, n_frame, n_mfcc, extra)
