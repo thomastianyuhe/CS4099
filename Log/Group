@@ -1,4 +1,0 @@
-INFO:root:batch_size:  35
-INFO:root:n_epochs:  60
-INFO:root:learning_rate:  0.0010
-INFO:root:dropout:  0.10

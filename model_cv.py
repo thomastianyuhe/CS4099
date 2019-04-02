@@ -39,16 +39,16 @@ def create_nonbinary_model(input_shape, num_output, batch_size, epochs, learning
 
 def run(model_name, cv):
     logging.basicConfig(filename='./Log/%s-CV' % model_name, level=logging.INFO)
-    X_train, _, y_train, _= load_data(model_name) 
+    X_train, _, y_train, _= load_data(model_name)
     input_shape = (np.shape(X_train)[1], np.shape(X_train)[2])
     model = KerasClassifier(build_fn=create_nonbinary_model, verbose=1)
     if model_name in binary_classification:
         model = KerasClassifier(build_fn=create_binary_model, verbose=1)
- 
+
     param_grid = dict(get_configuration('./CV Configurations/%s.json' % model_name))
     param_grid['input_shape'] = [input_shape]
     param_grid['num_output'] = [y_train.shape[1]]
-    grid = GridSearchCV(cv=cv, estimator=model, param_grid=param_grid, n_jobs=1)
+    grid = GridSearchCV(cv=cv, estimator=model, param_grid=param_grid, n_jobs=-1)
     grid_result = grid.fit(X_train, y_train)
 
     #sys.stdout = open("./Log/%s" % model_name, "w")
@@ -65,4 +65,3 @@ if __name__ == '__main__':
     model_name = sys.argv[1]
     cv = int(sys.argv[2])
     run(model_name, cv)
-
