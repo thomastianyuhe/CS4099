@@ -2,6 +2,5 @@
   "batch_size": [ 16, 32, 64 ],
   "epochs": [ 40 ],
   "dropout": [ 0.1, 0.3, 0.5 ],
-  "learning_rate": [ 0.0001, 0.001, 0.1 ],
-  "activation": [ "softmax" ]
+  "learning_rate": [ 0.0001, 0.001, 0.1 ]
 }

@@ -13,13 +13,12 @@ from audio_feature_extractor import extract_audio_features
 from sklearn import preprocessing
 from sklearn.metrics import precision_recall_curve, confusion_matrix, accuracy_score, roc_curve, auc
 import sys
-from utils import load_data, decode, genre_list_dic
+from utils import load_data, decode, genre_list_dic, binary_classification_list
 from plotter import confusion_matrix_plotter, accuracy_trace_plotter, loss_trace_plotter
 
 # Turn off TF verbose logging
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
 matplotlib.use('Agg')
-binary_classification = ['LSTM1', 'LSTM2a', 'LSTM2b', 'LSTM3b', 'LSTM3c', 'GroupA', 'GroupB2', 'GroupD']
 
 
 def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dropout=0.1, num_test=10):
@@ -41,7 +40,7 @@ def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dro
 
     for i in range(num_test):
 
-        if model_name in binary_classification:
+        if model_name in binary_classification_list:
             #if its binary classification
             activation = 'sigmoid'
             loss = 'binary_crossentropy'

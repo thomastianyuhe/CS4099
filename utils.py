@@ -20,13 +20,14 @@ genre_list_dic = {'LSTM'  : ['blues', 'classical', 'country', 'disco', 'hiphop',
                   'LSTM3d_extra': ['blues', 'classical', 'jazz'],
                   'GroupRoot': ['group_a', 'group_b', 'group_c', 'group_d'],
                   'GroupA':['blues', 'jazz'],
-                  'GroupB':['group_b1', 'group_b2'],
-                  'GroupB1':['rock', 'metal', 'reggae'],
-                  'GroupB2':['pop', 'hiphop'],
+                  'GroupB':['rock', 'metal'],
+                  'GroupE':['pop', 'hiphop','reggae'],
                   'GroupC':['classical', 'country', 'world'],
                   'Test':['classical', 'country', 'world'],
                   'GroupD':['electronic', 'disco'],
                   'emotion':['happy', 'sad', 'relax', 'angry']}
+
+binary_classification_list = ['LSTM1', 'LSTM2a', 'LSTM2b', 'LSTM3b', 'LSTM3c', 'GroupA', 'GroupB', 'GroupD']
 
 def one_hot(Y_genre_strings, genre_list):
     y_one_hot = np.zeros((Y_genre_strings.shape[0], len(genre_list)))

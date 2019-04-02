@@ -28,8 +28,9 @@ def extract_audio_features(list_of_audiofiles, dataset, n_frame=128, n_mfcc=14, 
         y, sr = librosa.load(filepath)
         mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=n_mfcc)
         data[i,:n_frame,:n_mfcc] = mfcc.T[:n_frame, :]
-        chroma = librosa.feature.chroma_stft(y=y, sr=sr)
-        data[i,:n_frame,n_mfcc:] = chroma.T[:n_frame,:]
+        if extra:
+            chroma = librosa.feature.chroma_stft(y=y, sr=sr)
+            data[i,:n_frame,n_mfcc:] = chroma.T[:n_frame,:]
         filename = re.split('[/]', filepath)[-1]
         genre = re.split('[ .]', filename)[0]
         print("filename %s, genre %s" % (filename, genre))

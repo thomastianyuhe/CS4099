@@ -11,6 +11,8 @@ def get_waveform(filepath):
     librosa.display.waveplot(y=y, sr=sr)
     filename = re.split('[/]', filepath)[-1]
     plt.title('Waveform - %s' % filename)
+    plt.savefig('./Audio Visualization/Waveform/%s.png'% filename)
+    plt.clf()
 
 def get_chromagram(filepath):
     y, sr = librosa.load(filepath)
@@ -20,7 +22,8 @@ def get_chromagram(filepath):
     plt.colorbar()
     filename = re.split('[/]', filepath)[-1]
     plt.title('Chromagram - &s' % filename)
-    plt.tight_layout()
+    plt.savefig('./Audio Visualization/Chromagram/%s.png'% filename)
+    plt.clf()
 
 def get_mfcc(filepath):
     y, sr = librosa.load(filepath)
@@ -29,4 +32,5 @@ def get_mfcc(filepath):
     librosa.display.specshow(mfccs, x_axis='time')
     plt.colorbar()
     plt.title('MFCC')
-    plt.tight_layout()
+    plt.savefig('./Audio Visualization/MFCC/%s.png'% filename)
+    plt.clf()

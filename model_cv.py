@@ -11,29 +11,28 @@ import logging
 from sklearn import preprocessing
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import classification_report
-from utils import load_data, decode
+from utils import load_data, decode, binary_classification_list
 
 # Turn off TF verbose logging
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
-binary_classification = ['LSTM1', 'LSTM2a', 'LSTM2b', 'LSTM3b', 'LSTM3c', 'GroupA', 'GroupB2', 'GroupD']
 
 def get_configuration(filename):
    with open(filename) as f_in:
        return(json.load(f_in))
 
-def create_binary_model(input_shape, num_output, batch_size, epochs, learning_rate, dropout, activation):
+def create_binary_model(input_shape, num_output, batch_size, epochs, learning_rate, dropout):
     model = Sequential()
     model.add(LSTM(units=128, dropout=dropout, return_sequences=True, input_shape=input_shape))
     model.add(LSTM(units=32, dropout=dropout, return_sequences=True))
-    model.add(LSTM(units=num_output, activation=activation))
+    model.add(LSTM(units=num_output, activation='sigmoid'))
     model.compile(loss='binary_crossentropy', optimizer=Adam(lr=learning_rate), metrics=['accuracy'])
     return model
 
-def create_nonbinary_model(input_shape, num_output, batch_size, epochs, learning_rate, dropout, activation):
+def create_nonbinary_model(input_shape, num_output, batch_size, epochs, learning_rate, dropout):
     model = Sequential()
     model.add(LSTM(units=128, dropout=dropout, return_sequences=True, input_shape=input_shape))
     model.add(LSTM(units=32, dropout=dropout, return_sequences=True))
-    model.add(LSTM(units=num_output, activation=activation))
+    model.add(LSTM(units=num_output, activation='softmax'))
     model.compile(loss='categorical_crossentropy', optimizer=Adam(lr=learning_rate), metrics=['accuracy'])
     return model
 
@@ -42,7 +41,7 @@ def run(model_name, cv):
     X_train, _, y_train, _= load_data(model_name)
     input_shape = (np.shape(X_train)[1], np.shape(X_train)[2])
     model = KerasClassifier(build_fn=create_nonbinary_model, verbose=1)
-    if model_name in binary_classification:
+    if model_name in binary_classification_list:
         model = KerasClassifier(build_fn=create_binary_model, verbose=1)
 
     param_grid = dict(get_configuration('./CV Configurations/%s.json' % model_name))
