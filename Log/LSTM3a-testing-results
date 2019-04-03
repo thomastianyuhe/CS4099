@@ -1,0 +1,168 @@
+INFO:root:batch_size:  32
+INFO:root:n_epochs:  40
+INFO:root:learning_rate:  0.001
+INFO:root:dropout:  0.10
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:root:Test 0 Accuracy:  0.6556
+INFO:root:Test 0 Loss:  1.2343
+INFO:root:batch_size:  32
+INFO:root:n_epochs:  40
+INFO:root:learning_rate:  0.001
+INFO:root:dropout:  0.10
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:root:Test 0 Accuracy:  0.6444
+INFO:root:Test 0 Loss:  0.8697
+INFO:root:Test 1 Accuracy:  0.6889
+INFO:root:Test 1 Loss:  0.7922
+INFO:root:Test 2 Accuracy:  0.7000
+INFO:root:Test 2 Loss:  0.7374
+INFO:root:Test 3 Accuracy:  0.6778
+INFO:root:Test 3 Loss:  0.9539
+INFO:root:Test 4 Accuracy:  0.6444
+INFO:root:Test 4 Loss:  1.0778
+INFO:root:Test 5 Accuracy:  0.6667
+INFO:root:Test 5 Loss:  0.8977
+INFO:root:Test 6 Accuracy:  0.6889
+INFO:root:Test 6 Loss:  1.5123
+INFO:root:Test 7 Accuracy:  0.6444
+INFO:root:Test 7 Loss:  1.0855
+INFO:root:Test 8 Accuracy:  0.7222
+INFO:root:Test 8 Loss:  0.7540
+INFO:root:Test 9 Accuracy:  0.7333
+INFO:root:Test 9 Loss:  0.7089
+INFO:root:Test 10 Accuracy:  0.7111
+INFO:root:Test 10 Loss:  0.7794
+INFO:root:Test 11 Accuracy:  0.6778
+INFO:root:Test 11 Loss:  0.8393
+INFO:root:Test 12 Accuracy:  0.6778
+INFO:root:Test 12 Loss:  0.9192
+INFO:root:Test 13 Accuracy:  0.6778
+INFO:root:Test 13 Loss:  0.7469
+INFO:root:Test 14 Accuracy:  0.7111
+INFO:root:Test 14 Loss:  0.6653
+INFO:root:Test 15 Accuracy:  0.6778
+INFO:root:Test 15 Loss:  1.2221
+INFO:root:Test 16 Accuracy:  0.7111
+INFO:root:Test 16 Loss:  0.9248
+INFO:root:Test 17 Accuracy:  0.7556
+INFO:root:Test 17 Loss:  0.8077
+INFO:root:Test 18 Accuracy:  0.7444
+INFO:root:Test 18 Loss:  1.7235
+INFO:root:Test 19 Accuracy:  0.6778
+INFO:root:Test 19 Loss:  0.8878
+INFO:root:Average Testing Accuracy:  0.6917
+INFO:root:Average Testing Loss:  0.9453
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:root:batch_size:  32
+INFO:root:n_epochs:  40
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.10
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:root:Test 0 Accuracy:  0.6667
+INFO:root:Test 0 Loss:  0.8431
+INFO:root:Test 1 Accuracy:  0.7778
+INFO:root:Test 1 Loss:  0.6576
+INFO:root:Test 2 Accuracy:  0.7000
+INFO:root:Test 2 Loss:  1.0093
+INFO:root:Test 3 Accuracy:  0.6556
+INFO:root:Test 3 Loss:  1.2125
+INFO:root:Test 4 Accuracy:  0.7222
+INFO:root:Test 4 Loss:  0.8315
+INFO:root:Test 5 Accuracy:  0.7111
+INFO:root:Test 5 Loss:  0.8568
+INFO:root:Test 6 Accuracy:  0.6444
+INFO:root:Test 6 Loss:  1.3360
+INFO:root:Test 7 Accuracy:  0.7556
+INFO:root:Test 7 Loss:  0.6970
+INFO:root:Test 8 Accuracy:  0.7444
+INFO:root:Test 8 Loss:  0.6332
+INFO:root:Test 9 Accuracy:  0.6778
+INFO:root:Test 9 Loss:  0.9430
+INFO:root:Test 10 Accuracy:  0.7667
+INFO:root:Test 10 Loss:  0.6698
+INFO:root:Test 11 Accuracy:  0.6444
+INFO:root:Test 11 Loss:  1.0007
+INFO:root:Test 12 Accuracy:  0.6778
+INFO:root:Test 12 Loss:  0.8527
+INFO:root:Test 13 Accuracy:  0.7444
+INFO:root:Test 13 Loss:  0.8682
+INFO:root:Test 14 Accuracy:  0.6556
+INFO:root:Test 14 Loss:  0.8607
+INFO:root:Test 15 Accuracy:  0.6556
+INFO:root:Test 15 Loss:  1.4843
+INFO:root:Test 16 Accuracy:  0.7111
+INFO:root:Test 16 Loss:  0.8685
+INFO:root:Test 17 Accuracy:  0.6222
+INFO:root:Test 17 Loss:  1.4180
+INFO:root:Test 18 Accuracy:  0.7556
+INFO:root:Test 18 Loss:  0.9159
+INFO:root:Test 19 Accuracy:  0.6778
+INFO:root:Test 19 Loss:  1.1854
+INFO:root:Average Testing Accuracy:  0.6983
+INFO:root:Average Testing Loss:  0.9572
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:root:batch_size:  32
+INFO:root:n_epochs:  40
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.10
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:root:Test 0 Accuracy:  0.7111
+INFO:root:Test 0 Loss:  0.6605
+INFO:root:Test 1 Accuracy:  0.7111
+INFO:root:Test 1 Loss:  0.9141
+INFO:root:Average Testing Accuracy:  0.7111
+INFO:root:Average Testing Loss:  0.7873
+INFO:root:batch_size:  32
+INFO:root:n_epochs:  40
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.10
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:root:Test 0 Accuracy:  0.6889
+INFO:root:Test 0 Loss:  0.9237
+INFO:root:Test 1 Accuracy:  0.7222
+INFO:root:Test 1 Loss:  0.6940
+INFO:root:Test 2 Accuracy:  0.7333
+INFO:root:Test 2 Loss:  0.7910
+INFO:root:Average Testing Accuracy:  0.7148
+INFO:root:Average Testing Loss:  0.8029
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image

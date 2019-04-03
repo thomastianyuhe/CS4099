@@ -46,7 +46,7 @@ def accuracy_trace_plotter(model_name, acc, val_acc):
     plt.title('train & validation accuracy')
     plt.ylabel('accuracy')
     plt.xlabel('epoch')
-    plt.legend(['train', 'test'], loc='upper left')
+    plt.legend(['train', 'validation'], loc='upper left')
     plt.savefig('./Model Accuracy & Loss Diagram/%s-Accuracy'% (model_name))
     plt.clf()
 
@@ -57,5 +57,5 @@ def loss_trace_plotter(model_name, loss, val_loss):
     plt.title('train & validation loss')
     plt.ylabel('loss')
     plt.xlabel('epoch')
-    plt.legend(['train', 'test'], loc='upper left')
+    plt.legend(['train', 'validation'], loc='upper left')
     plt.savefig('./Model Accuracy & Loss Diagram/%s-Loss'% (model_name))

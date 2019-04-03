@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.utils import shuffle
 from sklearn.model_selection import train_test_split
 
-genre_list_dic = {'LSTM'  : ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock'], 
+genre_list_dic = {'LSTM'  : ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock'],
                   'LSTM_extra' : ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock'],
                   'LSTM1' : ['strong', 'mild'],
                   'LSTM1_extra' : ['strong', 'mild'],
@@ -18,7 +18,7 @@ genre_list_dic = {'LSTM'  : ['blues', 'classical', 'country', 'disco', 'hiphop',
                   'LSTM3c_extra': ['country', 'disco'],
                   'LSTM3d': ['blues', 'classical', 'jazz'],
                   'LSTM3d_extra': ['blues', 'classical', 'jazz'],
-                  'GroupRoot': ['group_a', 'group_b', 'group_c', 'group_d'],
+                  'GroupRoot': ['group_a', 'group_b', 'group_c', 'group_d', 'group_e'],
                   'GroupA':['blues', 'jazz'],
                   'GroupB':['rock', 'metal'],
                   'GroupE':['pop', 'hiphop','reggae'],
@@ -47,5 +47,6 @@ def load_data(model_name):
     X_data = np.load(X_data)
     y_data = np.load(y_data)
     y_data = one_hot(y_data, genre_list)
-    X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size=0.30, shuffle=True, random_state=1, stratify=y_data)
+    X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size=0.30, shuffle=True, stratify=y_data)
+    # X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size=0.30, shuffle=True, random_state=1, stratify=y_data)
     return X_train, X_test, y_train, y_test

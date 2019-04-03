@@ -16,8 +16,12 @@ def path_to_audiofiles(dataset):
     return list_of_audiofiles
 
 def extract_audio_features(list_of_audiofiles, dataset, n_frame=128, n_mfcc=14, extra=False):
-    X_data = './MFCC_dataset/%s_x_data' % dataset
-    y_data = './MFCC_dataset/%s_y_data' % dataset
+    X_data = './MFCC_dataset/%s_x' % dataset
+    y_data = './MFCC_dataset/%s_y' % dataset
+
+    if extra:
+        X_data += '_extra'
+        y_data += '_extra'
     #calculate the total number of features
     n_feature = n_mfcc
     if extra:
@@ -40,11 +44,8 @@ def extract_audio_features(list_of_audiofiles, dataset, n_frame=128, n_mfcc=14, 
 
     target = np.expand_dims(np.asarray(target), axis=1)
 
-    if extra:
-        X_data += '_extra'
-        y_data += '_extra'
-    X_data += '.npy'
-    y_data += '.npy'
+    X_data += '_data.npy'
+    y_data += '_data.npy'
     with open(X_data, 'wb+') as f:
         np.save(f, data)
     with open(y_data, 'wb+') as f:

@@ -1,0 +1,128 @@
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:root:Best: 0.785714 using {'batch_size': 16, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.785714 (0.056921) with: {'batch_size': 16, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.785714 (0.070851) with: {'batch_size': 16, 'dropout': 0.1, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.760714 (0.063540) with: {'batch_size': 16, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.710714 (0.070264) with: {'batch_size': 16, 'dropout': 0.3, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.739286 (0.078811) with: {'batch_size': 16, 'dropout': 0.3, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.757143 (0.087210) with: {'batch_size': 16, 'dropout': 0.3, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.657143 (0.059092) with: {'batch_size': 16, 'dropout': 0.5, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.710714 (0.074198) with: {'batch_size': 16, 'dropout': 0.5, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.764286 (0.089577) with: {'batch_size': 16, 'dropout': 0.5, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.782143 (0.068543) with: {'batch_size': 32, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.750000 (0.072381) with: {'batch_size': 32, 'dropout': 0.1, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.771429 (0.024217) with: {'batch_size': 32, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.728571 (0.078843) with: {'batch_size': 32, 'dropout': 0.3, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.746429 (0.084728) with: {'batch_size': 32, 'dropout': 0.3, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.742857 (0.055253) with: {'batch_size': 32, 'dropout': 0.3, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.632143 (0.093977) with: {'batch_size': 32, 'dropout': 0.5, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.689286 (0.040060) with: {'batch_size': 32, 'dropout': 0.5, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.707143 (0.041917) with: {'batch_size': 32, 'dropout': 0.5, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.775000 (0.066121) with: {'batch_size': 64, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.775000 (0.017583) with: {'batch_size': 64, 'dropout': 0.1, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.771429 (0.103358) with: {'batch_size': 64, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.735714 (0.092145) with: {'batch_size': 64, 'dropout': 0.3, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.721429 (0.082029) with: {'batch_size': 64, 'dropout': 0.3, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.707143 (0.061547) with: {'batch_size': 64, 'dropout': 0.3, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.625000 (0.045053) with: {'batch_size': 64, 'dropout': 0.5, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.625000 (0.072281) with: {'batch_size': 64, 'dropout': 0.5, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.675000 (0.061402) with: {'batch_size': 64, 'dropout': 0.5, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:root:Best: 0.821429 using {'batch_size': 16, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.700000 (0.032314) with: {'batch_size': 16, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.814286 (0.044136) with: {'batch_size': 16, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.714286 (0.033733) with: {'batch_size': 16, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.750000 (0.096189) with: {'batch_size': 16, 'dropout': 0.1, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.771429 (0.047945) with: {'batch_size': 16, 'dropout': 0.1, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.657143 (0.100496) with: {'batch_size': 16, 'dropout': 0.1, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.803571 (0.051188) with: {'batch_size': 16, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.821429 (0.043830) with: {'batch_size': 16, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.746429 (0.046006) with: {'batch_size': 16, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.653571 (0.045342) with: {'batch_size': 16, 'dropout': 0.3, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.785714 (0.046507) with: {'batch_size': 16, 'dropout': 0.3, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.632143 (0.027771) with: {'batch_size': 16, 'dropout': 0.3, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.696429 (0.039535) with: {'batch_size': 16, 'dropout': 0.3, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.800000 (0.028843) with: {'batch_size': 16, 'dropout': 0.3, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.682143 (0.024388) with: {'batch_size': 16, 'dropout': 0.3, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.728571 (0.011426) with: {'batch_size': 16, 'dropout': 0.3, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.778571 (0.052379) with: {'batch_size': 16, 'dropout': 0.3, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.692857 (0.069764) with: {'batch_size': 16, 'dropout': 0.3, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.510714 (0.015316) with: {'batch_size': 16, 'dropout': 0.5, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.760714 (0.052868) with: {'batch_size': 16, 'dropout': 0.5, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.710714 (0.036414) with: {'batch_size': 16, 'dropout': 0.5, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.535714 (0.036891) with: {'batch_size': 16, 'dropout': 0.5, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.782143 (0.049044) with: {'batch_size': 16, 'dropout': 0.5, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.675000 (0.076921) with: {'batch_size': 16, 'dropout': 0.5, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.628571 (0.052413) with: {'batch_size': 16, 'dropout': 0.5, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.757143 (0.031642) with: {'batch_size': 16, 'dropout': 0.5, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.610714 (0.052668) with: {'batch_size': 16, 'dropout': 0.5, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.635714 (0.062441) with: {'batch_size': 32, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.807143 (0.023797) with: {'batch_size': 32, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.739286 (0.027265) with: {'batch_size': 32, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.692857 (0.062422) with: {'batch_size': 32, 'dropout': 0.1, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.810714 (0.059283) with: {'batch_size': 32, 'dropout': 0.1, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.710714 (0.033348) with: {'batch_size': 32, 'dropout': 0.1, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.753571 (0.014037) with: {'batch_size': 32, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.817857 (0.052335) with: {'batch_size': 32, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.789286 (0.036966) with: {'batch_size': 32, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.592857 (0.035776) with: {'batch_size': 32, 'dropout': 0.3, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.775000 (0.046566) with: {'batch_size': 32, 'dropout': 0.3, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.725000 (0.012926) with: {'batch_size': 32, 'dropout': 0.3, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.603571 (0.095972) with: {'batch_size': 32, 'dropout': 0.3, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.803571 (0.033851) with: {'batch_size': 32, 'dropout': 0.3, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.735714 (0.071923) with: {'batch_size': 32, 'dropout': 0.3, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.689286 (0.045223) with: {'batch_size': 32, 'dropout': 0.3, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.778571 (0.012383) with: {'batch_size': 32, 'dropout': 0.3, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.682143 (0.022540) with: {'batch_size': 32, 'dropout': 0.3, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.521429 (0.023011) with: {'batch_size': 32, 'dropout': 0.5, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.732143 (0.053774) with: {'batch_size': 32, 'dropout': 0.5, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.735714 (0.039057) with: {'batch_size': 32, 'dropout': 0.5, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.514286 (0.027996) with: {'batch_size': 32, 'dropout': 0.5, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.789286 (0.044397) with: {'batch_size': 32, 'dropout': 0.5, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.700000 (0.083494) with: {'batch_size': 32, 'dropout': 0.5, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.585714 (0.071566) with: {'batch_size': 32, 'dropout': 0.5, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.803571 (0.039231) with: {'batch_size': 32, 'dropout': 0.5, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.725000 (0.114793) with: {'batch_size': 32, 'dropout': 0.5, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.546429 (0.030376) with: {'batch_size': 64, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.814286 (0.028196) with: {'batch_size': 64, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.817857 (0.037018) with: {'batch_size': 64, 'dropout': 0.1, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.678571 (0.048474) with: {'batch_size': 64, 'dropout': 0.1, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.800000 (0.028728) with: {'batch_size': 64, 'dropout': 0.1, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.746429 (0.041673) with: {'batch_size': 64, 'dropout': 0.1, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.696429 (0.013087) with: {'batch_size': 64, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.796429 (0.032479) with: {'batch_size': 64, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.703571 (0.069125) with: {'batch_size': 64, 'dropout': 0.1, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.603571 (0.072110) with: {'batch_size': 64, 'dropout': 0.3, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.785714 (0.039434) with: {'batch_size': 64, 'dropout': 0.3, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.771429 (0.027174) with: {'batch_size': 64, 'dropout': 0.3, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.585714 (0.066821) with: {'batch_size': 64, 'dropout': 0.3, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.785714 (0.038960) with: {'batch_size': 64, 'dropout': 0.3, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.742857 (0.013998) with: {'batch_size': 64, 'dropout': 0.3, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.560714 (0.048967) with: {'batch_size': 64, 'dropout': 0.3, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.796429 (0.040401) with: {'batch_size': 64, 'dropout': 0.3, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.771429 (0.052822) with: {'batch_size': 64, 'dropout': 0.3, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.496429 (0.013343) with: {'batch_size': 64, 'dropout': 0.5, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.771429 (0.035642) with: {'batch_size': 64, 'dropout': 0.5, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.742857 (0.040534) with: {'batch_size': 64, 'dropout': 0.5, 'epochs': 20, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.539286 (0.039336) with: {'batch_size': 64, 'dropout': 0.5, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.775000 (0.076801) with: {'batch_size': 64, 'dropout': 0.5, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.689286 (0.037823) with: {'batch_size': 64, 'dropout': 0.5, 'epochs': 30, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.553571 (0.055336) with: {'batch_size': 64, 'dropout': 0.5, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.778571 (0.045311) with: {'batch_size': 64, 'dropout': 0.5, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.685714 (0.027060) with: {'batch_size': 64, 'dropout': 0.5, 'epochs': 40, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}

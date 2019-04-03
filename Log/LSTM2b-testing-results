@@ -1,0 +1,91 @@
+INFO:root:batch_size:  32
+INFO:root:n_epochs:  35
+INFO:root:dropout:  0.30
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:root:Test 0 Accuracy:  0.7333
+INFO:root:Test 0 Loss:  0.5016
+INFO:root:Test 1 Accuracy:  0.7367
+INFO:root:Test 1 Loss:  0.5102
+INFO:root:Test 2 Accuracy:  0.6967
+INFO:root:Test 2 Loss:  0.5251
+INFO:root:Test 3 Accuracy:  0.7267
+INFO:root:Test 3 Loss:  0.5088
+INFO:root:Test 4 Accuracy:  0.7100
+INFO:root:Test 4 Loss:  0.5151
+INFO:root:Test 5 Accuracy:  0.7233
+INFO:root:Test 5 Loss:  0.5182
+INFO:root:Test 6 Accuracy:  0.7267
+INFO:root:Test 6 Loss:  0.4934
+INFO:root:Test 7 Accuracy:  0.7333
+INFO:root:Test 7 Loss:  0.5086
+INFO:root:Test 8 Accuracy:  0.7167
+INFO:root:Test 8 Loss:  0.5148
+INFO:root:Test 9 Accuracy:  0.7333
+INFO:root:Test 9 Loss:  0.4884
+INFO:root:Average Testing Accuracy:  0.7237
+INFO:root:Average Testing Loss:  0.5084
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:root:batch_size:  32
+INFO:root:n_epochs:  35
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.30
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:root:Test 0 Accuracy:  0.7833
+INFO:root:Test 0 Loss:  0.4555
+INFO:root:Test 1 Accuracy:  0.7233
+INFO:root:Test 1 Loss:  0.5146
+INFO:root:Test 2 Accuracy:  0.7633
+INFO:root:Test 2 Loss:  0.4889
+INFO:root:Test 3 Accuracy:  0.7567
+INFO:root:Test 3 Loss:  0.5109
+INFO:root:Test 4 Accuracy:  0.7333
+INFO:root:Test 4 Loss:  0.5156
+INFO:root:Test 5 Accuracy:  0.7100
+INFO:root:Test 5 Loss:  0.5422
+INFO:root:Test 6 Accuracy:  0.6900
+INFO:root:Test 6 Loss:  0.5335
+INFO:root:Test 7 Accuracy:  0.7600
+INFO:root:Test 7 Loss:  0.4965
+INFO:root:Test 8 Accuracy:  0.7633
+INFO:root:Test 8 Loss:  0.4780
+INFO:root:Test 9 Accuracy:  0.6867
+INFO:root:Test 9 Loss:  0.6023
+INFO:root:Test 10 Accuracy:  0.7367
+INFO:root:Test 10 Loss:  0.4641
+INFO:root:Test 11 Accuracy:  0.8233
+INFO:root:Test 11 Loss:  0.4560
+INFO:root:Test 12 Accuracy:  0.7233
+INFO:root:Test 12 Loss:  0.5974
+INFO:root:Test 13 Accuracy:  0.7633
+INFO:root:Test 13 Loss:  0.5322
+INFO:root:Test 14 Accuracy:  0.7367
+INFO:root:Test 14 Loss:  0.5416
+INFO:root:Test 15 Accuracy:  0.7067
+INFO:root:Test 15 Loss:  0.5206
+INFO:root:Test 16 Accuracy:  0.7933
+INFO:root:Test 16 Loss:  0.4897
+INFO:root:Test 17 Accuracy:  0.7067
+INFO:root:Test 17 Loss:  0.5433
+INFO:root:Test 18 Accuracy:  0.7667
+INFO:root:Test 18 Loss:  0.4663
+INFO:root:Test 19 Accuracy:  0.7067
+INFO:root:Test 19 Loss:  0.5677
+INFO:root:Average Testing Accuracy:  0.7417
+INFO:root:Average Testing Loss:  0.5158
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image

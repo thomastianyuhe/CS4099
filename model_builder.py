@@ -18,8 +18,6 @@ from plotter import confusion_matrix_plotter, accuracy_trace_plotter, loss_trace
 
 # Turn off TF verbose logging
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
-matplotlib.use('Agg')
-
 
 def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dropout=0.1, num_test=10):
     model = None
@@ -27,9 +25,9 @@ def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dro
     logging.basicConfig(filename='./Log/%s-testing-results' % model_name, filemode = 'a', level=logging.INFO)
     logging.info("batch_size:  %d" % batch_size)
     logging.info("n_epochs:  %d" % n_epochs)
+    logging.info("learning_rate:  %.4f" % learning_rate)
     logging.info("dropout:  %.2f" % dropout)
-    
-    X_train, X_test, y_train, y_test = load_data(model_name, False, False)
+
     accuracy_scores = []
     loss_scores = []
     confusion_matrices = []
@@ -39,7 +37,7 @@ def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dro
     history_loss = np.zeros(n_epochs)
 
     for i in range(num_test):
-
+        X_train, X_test, y_train, y_test = load_data(model_name)
         if model_name in binary_classification_list:
             #if its binary classification
             activation = 'sigmoid'
@@ -47,7 +45,7 @@ def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dro
         else:
             activation = 'softmax'
             loss = 'categorical_crossentropy'
-          
+
         input_shape = (np.shape(X_train)[1], np.shape(X_train)[2])
         print(input_shape)
         print('Build %s RNN model ...' % model_name)
