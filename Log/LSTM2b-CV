@@ -35,3 +35,40 @@ INFO:root:0.662857 (0.047681) with: {'activation': 'sigmoid', 'batch_size': 64, 
 INFO:root:0.624286 (0.028067) with: {'activation': 'sigmoid', 'batch_size': 64, 'dropout': 0.5, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
 INFO:root:0.698571 (0.043892) with: {'activation': 'sigmoid', 'batch_size': 64, 'dropout': 0.5, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
 INFO:root:0.615714 (0.029067) with: {'activation': 'sigmoid', 'batch_size': 64, 'dropout': 0.5, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:root:Best: 0.782857 using {'activation': 'sigmoid', 'batch_size': 16, 'dropout': 0.1, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.757143 (0.074779) with: {'activation': 'sigmoid', 'batch_size': 16, 'dropout': 0.1, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.782857 (0.065090) with: {'activation': 'sigmoid', 'batch_size': 16, 'dropout': 0.1, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.658571 (0.060085) with: {'activation': 'sigmoid', 'batch_size': 16, 'dropout': 0.1, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.670000 (0.071271) with: {'activation': 'sigmoid', 'batch_size': 16, 'dropout': 0.3, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.760000 (0.067249) with: {'activation': 'sigmoid', 'batch_size': 16, 'dropout': 0.3, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.581429 (0.067627) with: {'activation': 'sigmoid', 'batch_size': 16, 'dropout': 0.3, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.608571 (0.069459) with: {'activation': 'sigmoid', 'batch_size': 16, 'dropout': 0.5, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.724286 (0.072012) with: {'activation': 'sigmoid', 'batch_size': 16, 'dropout': 0.5, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.537143 (0.185736) with: {'activation': 'sigmoid', 'batch_size': 16, 'dropout': 0.5, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.732857 (0.073415) with: {'activation': 'sigmoid', 'batch_size': 32, 'dropout': 0.1, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.768571 (0.061545) with: {'activation': 'sigmoid', 'batch_size': 32, 'dropout': 0.1, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.694286 (0.062335) with: {'activation': 'sigmoid', 'batch_size': 32, 'dropout': 0.1, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.652857 (0.077473) with: {'activation': 'sigmoid', 'batch_size': 32, 'dropout': 0.3, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.735714 (0.084092) with: {'activation': 'sigmoid', 'batch_size': 32, 'dropout': 0.3, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.611429 (0.071941) with: {'activation': 'sigmoid', 'batch_size': 32, 'dropout': 0.3, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.621429 (0.077526) with: {'activation': 'sigmoid', 'batch_size': 32, 'dropout': 0.5, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.735714 (0.043448) with: {'activation': 'sigmoid', 'batch_size': 32, 'dropout': 0.5, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.605714 (0.079334) with: {'activation': 'sigmoid', 'batch_size': 32, 'dropout': 0.5, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.684286 (0.063391) with: {'activation': 'sigmoid', 'batch_size': 64, 'dropout': 0.1, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.780000 (0.081115) with: {'activation': 'sigmoid', 'batch_size': 64, 'dropout': 0.1, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.751429 (0.074560) with: {'activation': 'sigmoid', 'batch_size': 64, 'dropout': 0.1, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.627143 (0.077315) with: {'activation': 'sigmoid', 'batch_size': 64, 'dropout': 0.3, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.747143 (0.081579) with: {'activation': 'sigmoid', 'batch_size': 64, 'dropout': 0.3, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.725714 (0.093634) with: {'activation': 'sigmoid', 'batch_size': 64, 'dropout': 0.3, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}
+INFO:root:0.600000 (0.074505) with: {'activation': 'sigmoid', 'batch_size': 64, 'dropout': 0.5, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.0001, 'num_output': 2}
+INFO:root:0.701429 (0.070117) with: {'activation': 'sigmoid', 'batch_size': 64, 'dropout': 0.5, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.001, 'num_output': 2}
+INFO:root:0.600000 (0.070855) with: {'activation': 'sigmoid', 'batch_size': 64, 'dropout': 0.5, 'epochs': 35, 'input_shape': (128, 14), 'learning_rate': 0.1, 'num_output': 2}

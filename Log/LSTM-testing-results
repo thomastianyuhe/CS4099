@@ -31,3 +31,26 @@ INFO:root:Test 8 Accuracy:  0.4833
 INFO:root:Test 8 Loss:  1.7652
 INFO:root:Test 9 Accuracy:  0.4800
 INFO:root:Test 9 Loss:  1.7924
+INFO:root:Test 10 Accuracy:  0.3733
+INFO:root:Test 10 Loss:  1.8481
+INFO:root:Test 11 Accuracy:  0.4600
+INFO:root:Test 11 Loss:  1.9350
+INFO:root:Test 12 Accuracy:  0.4400
+INFO:root:Test 12 Loss:  1.7424
+INFO:root:Test 13 Accuracy:  0.4633
+INFO:root:Test 13 Loss:  1.7063
+INFO:root:Test 14 Accuracy:  0.4733
+INFO:root:Test 14 Loss:  1.6237
+INFO:root:Test 15 Accuracy:  0.4367
+INFO:root:Test 15 Loss:  1.7081
+INFO:root:Test 16 Accuracy:  0.4233
+INFO:root:Test 16 Loss:  1.5606
+INFO:root:Test 17 Accuracy:  0.4433
+INFO:root:Test 17 Loss:  1.7951
+INFO:root:Test 18 Accuracy:  0.4667
+INFO:root:Test 18 Loss:  1.5935
+INFO:root:Test 19 Accuracy:  0.4367
+INFO:root:Test 19 Loss:  2.0447
+INFO:root:Average Testing Accuracy:  0.4555
+INFO:root:Average Testing Loss:  1.7818
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
