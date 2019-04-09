@@ -41,10 +41,9 @@ def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dro
         if model_name in binary_classification_list:
             #if its binary classification
             activation = 'sigmoid'
-            loss = 'binary_crossentropy'
         else:
             activation = 'softmax'
-            loss = 'categorical_crossentropy'
+        loss = 'categorical_crossentropy'
 
         input_shape = (np.shape(X_train)[1], np.shape(X_train)[2])
         print(input_shape)
@@ -104,14 +103,6 @@ def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dro
         final_cm += cm
     confusion_matrix_plotter(final_cm, model_name)
     return model
-#if model_name in binary_classification:
-#    y_test_decoded = preprocessing.label_binarize(y_test_decoded,
-#    genre_list_dic[model_name])
-#    y_pred_decoded = preprocessing.label_binarize(y_pred_decoded,
-#    genre_list_dic[model_name])
-#    fpr, tpr, _ = roc_curve(y_test_decoded, y_pred_decoded)
-#    roc_auc = auc(fpr, tpr)
-#    roc_plotter(fpr, tpr, roc_auc, model_name)
 
 #save model
 def save_model(model):
