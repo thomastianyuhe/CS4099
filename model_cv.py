@@ -13,8 +13,8 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import classification_report
 from utils import load_data, decode, binary_classification_list
 
-# Turn off TF verbose logging
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
+# switch off tensorflow verbose logging
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
 
 def get_configuration(filename):
    with open(filename) as f_in:
@@ -50,7 +50,6 @@ def run(model_name, cv):
     grid = GridSearchCV(cv=cv, estimator=model, param_grid=param_grid, n_jobs=-1)
     grid_result = grid.fit(X_train, y_train)
 
-    #sys.stdout = open("./Log/%s" % model_name, "w")
     print("Best: %f using %s" % (grid_result.best_score_, grid_result.best_params_))
     logging.info("Best: %f using %s" % (grid_result.best_score_, grid_result.best_params_))
     means = grid_result.cv_results_['mean_test_score']
