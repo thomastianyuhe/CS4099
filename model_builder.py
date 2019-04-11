@@ -16,8 +16,8 @@ import sys
 from utils import load_data, decode, genre_list_dic, binary_classification_list
 from plotter import confusion_matrix_plotter, accuracy_trace_plotter, loss_trace_plotter
 
-# Turn off TF verbose logging
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
+# switch off tensorflows verbose logging
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  
 
 def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dropout=0.1, num_test=10):
     model = None
@@ -47,18 +47,17 @@ def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dro
 
         input_shape = (np.shape(X_train)[1], np.shape(X_train)[2])
         print(input_shape)
-        print('Build %s RNN model ...' % model_name)
+        print('Build %s model ...' % model_name)
         model = Sequential()
         model.add(LSTM(units=128, dropout=dropout, return_sequences=True, input_shape=input_shape))
         model.add(LSTM(units=32, dropout=dropout, return_sequences=True))
         model.add(LSTM(units=y_train.shape[1], activation=activation))
-
-        print("Compiling ...")
+        #compile the model
         model.compile(loss=loss, optimizer=Adam(lr=learning_rate), metrics=['accuracy'])
         plot_model(model, to_file='%s.png' % model_name, show_shapes=True, show_layer_names=True)
         model.summary()
 
-        print("Training & Validating...")
+        #train and validate the model
         result = model.fit(X_train, y_train, validation_split=0.33, epochs=n_epochs, batch_size=batch_size)
 
         history_acc += np.array(result.history['acc'])
@@ -66,7 +65,7 @@ def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dro
         history_loss += np.array(result.history['loss'])
         history_val_loss += np.array(result.history['val_loss'])
 
-        print("\nTesting ...")
+        #test the model
         loss, accuracy = model.evaluate(X_test, y_test, batch_size=batch_size, verbose=1)
         y_pred = model.predict(X_test)
         y_pred_decoded = []
@@ -104,7 +103,7 @@ def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dro
     confusion_matrix_plotter(final_cm, model_name)
     return model
 
-#save model
+
 def save_model(model):
     model_json = model.to_json()
     with open("./Trained Models/%s.json" % model_name, "w") as json_file:
