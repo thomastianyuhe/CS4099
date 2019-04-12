@@ -41,9 +41,10 @@ def build_model(model_name, batch_size=35, n_epochs=20, learning_rate=0.001, dro
         if model_name in binary_classification_list:
             #if its binary classification
             activation = 'sigmoid'
+            loss = 'binary_crossentropy'
         else:
             activation = 'softmax'
-        loss = 'categorical_crossentropy'
+            loss = 'categorical_crossentropy'
 
         input_shape = (np.shape(X_train)[1], np.shape(X_train)[2])
         print(input_shape)
