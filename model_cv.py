@@ -25,7 +25,7 @@ def create_binary_model(input_shape, num_output, batch_size, epochs, learning_ra
     model.add(LSTM(units=128, dropout=dropout, return_sequences=True, input_shape=input_shape))
     model.add(LSTM(units=32, dropout=dropout, return_sequences=True))
     model.add(LSTM(units=num_output, activation='sigmoid'))
-    model.compile(loss='categorical_crossentropy', optimizer=Adam(lr=learning_rate), metrics=['accuracy'])
+    model.compile(loss='binary_crossentropy', optimizer=Adam(lr=learning_rate), metrics=['accuracy'])
     return model
 
 def create_nonbinary_model(input_shape, num_output, batch_size, epochs, learning_rate, dropout):
