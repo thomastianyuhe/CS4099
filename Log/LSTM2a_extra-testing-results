@@ -1,1 +1,55 @@
-
+INFO:root:batch_size:  16
+INFO:root:n_epochs:  20
+INFO:root:learning_rate:  0.0010
+INFO:root:dropout:  0.10
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /cs/home/th61/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:root:Test 0 Accuracy:  0.7200
+INFO:root:Test 0 Loss:  0.5435
+INFO:root:Test 1 Accuracy:  0.7333
+INFO:root:Test 1 Loss:  1.1032
+INFO:root:Test 2 Accuracy:  0.7333
+INFO:root:Test 2 Loss:  0.5299
+INFO:root:Test 3 Accuracy:  0.7020
+INFO:root:Test 3 Loss:  0.5633
+INFO:root:Test 4 Accuracy:  0.7110
+INFO:root:Test 4 Loss:  0.9516
+INFO:root:Test 5 Accuracy:  0.6210
+INFO:root:Test 5 Loss:  0.4624
+INFO:root:Test 6 Accuracy:  0.7200
+INFO:root:Test 6 Loss:  0.4449
+INFO:root:Test 7 Accuracy:  0.7100
+INFO:root:Test 7 Loss:  0.4235
+INFO:root:Test 8 Accuracy:  0.7323
+INFO:root:Test 8 Loss:  0.2259
+INFO:root:Test 9 Accuracy:  0.7467
+INFO:root:Test 9 Loss:  0.8259
+INFO:root:Test 10 Accuracy:  0.7733
+INFO:root:Test 10 Loss:  0.6415
+INFO:root:Test 11 Accuracy:  0.7232
+INFO:root:Test 11 Loss:  0.6041
+INFO:root:Test 12 Accuracy:  0.7033
+INFO:root:Test 12 Loss:  0.4480
+INFO:root:Test 13 Accuracy:  0.7700
+INFO:root:Test 13 Loss:  0.2861
+INFO:root:Test 14 Accuracy:  0.7433
+INFO:root:Test 14 Loss:  0.6850
+INFO:root:Test 15 Accuracy:  0.7367
+INFO:root:Test 15 Loss:  0.5703
+INFO:root:Test 16 Accuracy:  0.7200
+INFO:root:Test 16 Loss:  0.2139
+INFO:root:Test 17 Accuracy:  0.7000
+INFO:root:Test 17 Loss:  1.1916
+INFO:root:Test 18 Accuracy:  0.7833
+INFO:root:Test 18 Loss:  0.4767
+INFO:root:Test 19 Accuracy:  0.8067
+INFO:root:Test 19 Loss:  0.6728
+INFO:root:Average Testing Accuracy:  0.7435
+INFO:root:Average Testing Loss:  0.7909
