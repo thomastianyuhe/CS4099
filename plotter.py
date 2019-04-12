@@ -1,9 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from sklearn.metrics import confusion_matrix, roc_curve
-from sklearn.utils.multiclass import unique_labels
-from utils import genre_list_dic
+from sklearn.metrics import confusion_matrix
+
 def confusion_matrix_plotter(cm, model_name):
 
     classes = genre_list_dic[model_name]
@@ -14,20 +13,17 @@ def confusion_matrix_plotter(cm, model_name):
     fig, ax = plt.subplots()
     im = ax.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
     ax.figure.colorbar(im, ax=ax)
-    # We want to show all ticks...
+
     ax.set(xticks=np.arange(cm.shape[1]),
            yticks=np.arange(cm.shape[0]),
-           # ... and label them with the respective list entries
            xticklabels=classes, yticklabels=classes,
            title='Normalized Confusion Matrix - %s' % model_name,
            ylabel='True label',
            xlabel='Predicted label')
 
-    # Rotate the tick labels and set their alignment.
     plt.setp(ax.get_xticklabels(), rotation=45, ha="right",
              rotation_mode="anchor")
 
-    # Loop over data dimensions and create text annotations.
     thresh = cm.max() / 2.
     for i in range(cm.shape[0]):
         for j in range(cm.shape[1]):
